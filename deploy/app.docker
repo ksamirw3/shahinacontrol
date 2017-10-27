@@ -31,7 +31,7 @@ RUN docker-php-ext-configure mbstring && \
     docker-php-ext-install -j$(nproc) gd iconv mcrypt bcmath fileinfo intl gettext zip
 
 
-RUN composer install  --no-scripts
+RUN composer install
 RUN composer dumpautoload
 RUN php artisan cache:clear
 
