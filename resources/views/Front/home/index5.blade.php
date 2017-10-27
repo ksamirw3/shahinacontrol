@@ -1,0 +1,3 @@
+
+
+{{trans('front.test')}}

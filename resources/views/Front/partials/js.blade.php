@@ -1,0 +1,11 @@
+<script src="assets/front/js/jquery.js"></script>
+<script src="assets/front/js/bootstrap.min.js"></script>
+<script src="assets/front/js/jquery.unveilEffects.js"></script>
+<script src="assets/front/js/retina-1.1.0.js"></script>
+<script src="assets/front/js/jquery.hoverdir.js"></script>
+<script src="assets/front/js/owl.carousel.js"></script>
+<script src="assets/front/js/jetmenu.js"></script>
+<script src="assets/front/js/jquery.hoverex.min.js"></script>
+<script src="assets/front/js/jquery.prettyPhoto.js"></script>
+<script src="assets/front/js/jquery.isotope.min.js"></script>
+<script src="assets/front/js/custom.js"></script>

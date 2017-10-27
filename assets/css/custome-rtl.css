@@ -1,0 +1,23 @@
+#main-content {
+    margin-right: 210px;
+    margin-left: auto;
+}
+
+a.logo {
+    float: right;
+    margin-right: 20px;
+}
+
+#sidebar > ul > li > a
+{
+    text-align: right;
+}
+
+ul.sidebar-menu li ul.sub li a
+{
+    margin-right: 20px;
+}
+
+ul.sidebar-menu li a i {
+    padding-left: 6px;
+}

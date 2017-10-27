@@ -1,0 +1,19 @@
+[20-Jul-2017 15:34:52 Africa/Cairo] PHP Warning:  Unterminated comment starting line 61 in /home/egclickprojects/4a7na.egclick.cf/app/Http/Controllers/Api/Home/Home.php on line 61
+[20-Jul-2017 21:06:56 Africa/Cairo] PHP Warning:  Unterminated comment starting line 61 in /home/egclickprojects/4a7na.egclick.cf/app/Http/Controllers/Api/Home/Home.php on line 61
+[20-Jul-2017 21:08:16 Africa/Cairo] PHP Warning:  Unterminated comment starting line 61 in /home/egclickprojects/4a7na.egclick.cf/app/Http/Controllers/Api/Home/Home.php on line 61
+[20-Jul-2017 21:08:16 Africa/Cairo] PHP Warning:  Unterminated comment starting line 61 in /home/egclickprojects/4a7na.egclick.cf/app/Http/Controllers/Api/Home/Home.php on line 61
+[20-Jul-2017 21:08:28 Africa/Cairo] PHP Warning:  Unterminated comment starting line 61 in /home/egclickprojects/4a7na.egclick.cf/app/Http/Controllers/Api/Home/Home.php on line 61
+[21-Jul-2017 15:39:58 Africa/Cairo] PHP Warning:  Uncaught exception 'ErrorException' with message 'Creating default object from empty value' in /home/egclickprojects/4a7na.egclick.cf/app/Http/Controllers/Api/Driver/Orders/Orders.php:50
+Stack trace:
+#0 /home/egclickprojects/4a7na.egclick.cf/app/Http/Controllers/Api/Driver/Orders/Orders.php(50): Illuminate\Foundation\Bootstrap\HandleExceptions->handleError(2, 'Creating defaul...', '/home/egclickpr...', 50, Array)
+#1 [internal function]: App\Http\Controllers\Api\Driver\Orders\Orders->anyUpdate()
+#2 /home/egclickprojects/4a7na.egclick.cf/vendor/laravel/framework/src/Illuminate/Routing/Controller.php(80): call_user_func_array(Array, Array)
+#3 /home/egclickprojects/4a7na.egclick.cf/vendor/laravel/framework/src/Illuminate/Routing/ControllerDispatcher.php(146): Illuminate\Routing\Controller->callAction('anyUpdate', Array)
+#4 /home/egclickprojects/4a7na.egclick.cf/vendor/laravel/framework/src/Illuminate/Routing/ControllerDispatcher.php(94): Illuminate\Routing\ControllerDispatcher->call(Object(App\Http\Controllers\Ap in /home/egclickprojects/4a7na.egclick.cf/app/Http/Controllers/Api/Driver/Orders/Orders.php on line 50
+[21-Jul-2017 15:39:58 Africa/Cairo] PHP Fatal error:  Cannot access empty property in /home/egclickprojects/4a7na.egclick.cf/app/Http/Controllers/Api/Driver/Orders/Orders.php on line 50
+[18-Sep-2017 18:01:42 Africa/Cairo] PHP Warning:  Unterminated comment starting line 61 in /home/shahglobal/public_html/control/app/Http/Controllers/Api/Home/Home.php on line 61
+[18-Sep-2017 18:01:43 Africa/Cairo] PHP Warning:  Unterminated comment starting line 61 in /home/shahglobal/public_html/control/app/Http/Controllers/Api/Home/Home.php on line 61
+[18-Sep-2017 18:02:06 Africa/Cairo] PHP Warning:  Unterminated comment starting line 61 in /home/shahglobal/public_html/control/app/Http/Controllers/Api/Home/Home.php on line 61
+[18-Sep-2017 18:02:15 Africa/Cairo] PHP Warning:  Unterminated comment starting line 61 in /home/shahglobal/public_html/control/app/Http/Controllers/Api/Home/Home.php on line 61
+[22-Sep-2017 14:09:45 Africa/Cairo] PHP Warning:  Unterminated comment starting line 61 in /home/shahglobal/public_html/control/app/Http/Controllers/Api/Home/Home.php on line 61
+[22-Sep-2017 14:10:14 Africa/Cairo] PHP Warning:  Unterminated comment starting line 61 in /home/shahglobal/public_html/control/app/Http/Controllers/Api/Home/Home.php on line 61

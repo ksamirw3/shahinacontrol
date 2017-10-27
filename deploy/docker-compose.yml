@@ -1,0 +1,37 @@
+version: '2'
+services:
+    web:
+        build:
+            context: ./
+            dockerfile: deploy/web.docker
+        volumes:
+            - ./:/var/www
+        ports:
+            - "8081:80"
+        links:
+            - app
+    app:
+        build:
+            context: ./
+            dockerfile: deploy/app.docker
+        volumes:
+            - ./:/var/www
+        links:
+            - database
+        dns:
+            - 8.8.8.8   
+        environment:
+            - "DB_PORT=3306"
+            - "DB_HOST=database"
+            - "DB_DATABASE=shahglobal"
+            - "DB_USERNAME=shahglobal"
+            - "DB_PASSWORD=H$QclhnX$q4)"
+    database:
+        image: mysql:5.7
+        environment:
+            - "MYSQL_ROOT_PASSWORD=123456789"
+            - "MYSQL_DATABASE=shahglobal"
+            - "MYSQL_USER=shahglobal"
+            - "MYSQL_PASSWORD=H$QclhnX$q4)"
+        ports:
+            - "33063:3306"
