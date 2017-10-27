@@ -1,12 +1,21 @@
 version: '2'
 services:
-    app:
+    web:
         build:
             context: ./
+            dockerfile: deploy/web.docker
         volumes:
             - ./:/var/www
         ports:
-            - "8081:80"   
+            - "8081:80"
+        links:
+            - app
+    app:
+        build:
+            context: ./
+            dockerfile: deploy/app.docker
+        volumes:
+            - ./:/var/www
         links:
             - database
         dns:

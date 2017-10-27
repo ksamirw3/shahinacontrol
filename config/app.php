@@ -141,6 +141,7 @@ return [
         'Maatwebsite\Excel\ExcelServiceProvider',
         'Thujohn\Twitter\TwitterServiceProvider',
         Elibyy\TCPDF\ServiceProvider::class,
+        Collective\Html\HtmlServiceProvider::class,
     ],
     /*
       |--------------------------------------------------------------------------
@@ -194,5 +195,6 @@ return [
         'Excel' => 'Maatwebsite\Excel\Facades\Excel',
         'Twitter' => 'Thujohn\Twitter\Facades\Twitter',
         'PDF' => Elibyy\TCPDF\Facades\TCPDF::class,
+        'HTML' => Collective\Html\HtmlFacade::class,
     ],
 ];
