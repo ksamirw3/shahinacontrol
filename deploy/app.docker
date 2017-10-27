@@ -1,6 +1,6 @@
 FROM php:7-fpm
 
-RUN apt-get update && apt-get install -y sudo \
+RUN apt-get update && apt-get install -y \
 	libmcrypt-dev  \
 	libicu-dev \
 	mysql-client \
@@ -30,9 +30,10 @@ RUN docker-php-ext-configure mbstring && \
     docker-php-ext-install gd  && \
     docker-php-ext-install -j$(nproc) gd iconv mcrypt bcmath fileinfo intl gettext zip
 
+WORKDIR /var/www
 
-RUN sudo composer install
+COPY ./ /var/www
+
+RUN composer install
 RUN composer dumpautoload
 RUN php artisan cache:clear
-
-WORKDIR /var/www
