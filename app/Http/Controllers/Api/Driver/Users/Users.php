@@ -16,7 +16,8 @@ class Users extends \App\Http\Controllers\Api\Base
 
         $user = request()->username;
         $password = request()->password;
-        $row = @Model::wherePhone($user)->first();
+        $row = @Model::whereUsername($user)->first();
+        
         if (!$row) {
             return Response::make()->setMessage(__('admin.driver not found'))->send();
         }

@@ -54,6 +54,7 @@ class Users extends Base {
         $row = @Model::wherePhone($phone)->first();
 //dd($row);
 
+
         if (!$row) {
             return Response::make()->setMessage('user not found')->send();
         }
@@ -196,6 +197,10 @@ class Users extends Base {
         } else {
             return Response::make()->setMessage(__('admin.profile not found'))->send();
         }
+    }
+    
+    public function anyTest() {
+        return response()->json('test');
     }
 
 }
