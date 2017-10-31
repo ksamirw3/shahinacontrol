@@ -14,9 +14,9 @@ class Users extends \App\Http\Controllers\Api\Base
     public function anyLogin(Checker $d)
     {
 
-        $user = request()->username;
+        $phone = request()->phone;
         $password = request()->password;
-        $row = @Model::whereUsername($user)->first();
+        $row = @Model::wherePhone($phone)->first();
         
         if (!$row) {
             return Response::make()->setMessage(__('admin.driver not found'))->send();
