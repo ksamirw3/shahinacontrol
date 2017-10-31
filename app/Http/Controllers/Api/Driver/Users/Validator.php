@@ -35,7 +35,7 @@ class Validator extends \App\Http\Controllers\Api\BaseValidator {
     }
 
     private static function login() {
-        return [ 'username' => 'required', 'password' => 'required',];
+        return [ 'phone' => 'required', 'password' => 'required',];
     }
 
     private static function logout() {
