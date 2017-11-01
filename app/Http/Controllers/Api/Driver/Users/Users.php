@@ -30,7 +30,7 @@ class Users extends \App\Http\Controllers\Api\Base
             $row->save();
             return Response::make()->setResult(TRUE)->setData(['id' => (int)$row->id, 'full_name' => $row->full_name, 'presonal_image' => $row->presonal_image])->setMessage(__('admin.driver found'))->send();
         } else {
-            return Response::make()->setMessage(__('admin.wrong username or password'))->send();
+            return Response::make()->setMessage(__('admin.wrong phone or password'))->send();
         }
     }
 

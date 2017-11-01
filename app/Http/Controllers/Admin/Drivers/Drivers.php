@@ -85,6 +85,7 @@ class Drivers extends \App\Http\Controllers\Admin\Base {
 
     public function postCreate(check $request) {
 
+        $request['active'] = 1;
 
         $row = Model::quickSave(initData::create($request));
 

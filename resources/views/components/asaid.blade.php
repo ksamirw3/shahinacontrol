@@ -58,32 +58,8 @@
                             <li><a href="admin/{{$input}}/index"><i class="fa fa-angle-right"></i>  {{__('admin.All Users')}}</a></li>
                         </ul>
                     </li>
-                    {{---------------------------------------------------------}}
-                    {{-- */$input='categories';/* --}}
-                    {{-- */$active=(request()->is('admin/'.$input)||request()->is('admin/'.$input.'/*'))?'active':'';/* --}}
-                    <li class="sub-menu ">
-                        <a class="{{$active}}" href="javascript:;">
-                            <i class="fa fa-bars" aria-hidden="true"></i>
-                            <span style="text-transform: capitalize"> {{__('admin.'.$input)}}</span>
-                        </a>
-                        <ul class="sub">
-                            <li><a href="admin/{{$input}}/index"><i class="fa fa-angle-right"></i>  {{__('admin.All Categories')}}</a></li>
-                            <li><a href="admin/{{$input}}/create"><i class="fa fa-angle-right"></i>  {{__('admin.Create Category')}}</a></li>
-                        </ul>
-                    </li>
-                    {{---------------------------------------------------------}}
-                    {{-- */$input='places';/* --}}
-                    {{-- */$active=(request()->is('admin/'.$input)||request()->is('admin/'.$input.'/*'))?'active':'';/* --}}
-                    <li class="sub-menu ">
-                        <a class="{{$active}}" href="javascript:;">
-                            <i class="fa fa-map-marker" aria-hidden="true"></i>
-                            <span style="text-transform: capitalize"> {{__('admin.'.$input)}}</span>
-                        </a>
-                        <ul class="sub">
-                            <li><a href="admin/{{$input}}/index"><i class="fa fa-angle-right"></i>  {{__('admin.All Places')}}</a></li>
-                            <li><a href="admin/{{$input}}/create"><i class="fa fa-angle-right"></i>  {{__('admin.Create Place')}}</a></li>
-                        </ul>
-                    </li>
+
+                    
                     {{---------------------------------------------------------}}
                     {{-- */$input='promotions';/* --}}
                     {{-- */$active=(request()->is('admin/'.$input)||request()->is('admin/'.$input.'/*'))?'active':'';/* --}}
