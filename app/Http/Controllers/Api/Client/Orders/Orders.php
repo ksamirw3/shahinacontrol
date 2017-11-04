@@ -38,7 +38,6 @@ class Orders extends \App\Http\Controllers\Api\Base {
 
     public function anyCreateOrder() {
         $req = request()->all();
-        
 
         if(!isset($req['car_type'])){
             $req['car_type'] = 'small';
@@ -63,6 +62,8 @@ class Orders extends \App\Http\Controllers\Api\Base {
         $data['receiver_name'] = $req['receiver_name'];
         $data['status'] = Model::$open;
         $data['start_time'] = Carbon::now();
+        
+        \Log::info('data: '. json_encode($data));
 
 //        if (request()->hasFile('image')) {
 //            $data['image'] = uploadImages(request()->file(image));

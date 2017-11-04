@@ -28,7 +28,11 @@ Route::group(['prefix' => 'api', 'namespace' => 'Api'], function () {
 
         Route::get('/', function () {
             \Log::info('driver>>>>>>>>>>>>>>>>>>>>');
-            dd('driver');
+            
+            return response()->json([
+                    'version' => 'Driver api 2.0.0',
+            ]
+        );
         });
       
     });
