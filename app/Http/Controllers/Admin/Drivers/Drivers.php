@@ -19,6 +19,7 @@ use App\Http\Validations\Admin\DreiversValidatio as check;
 use App\Http\Mails\Admin\Driver as MailSender;
 use App\Models\Order as DriverOrders;
 use App\Models\Review;
+use App\Models\Vehicle;
 use App\Models\Transaction;
 use Carbon\Carbon;
 use App\Http\Helper\Shared\TransactionHelper;
@@ -79,8 +80,10 @@ class Drivers extends \App\Http\Controllers\Admin\Base {
     }
 
     public function getCreate() {
+        
+        $vehicles = Vehicle::lists('model','model')->toArray();;
 
-        return parent::view([ 'row' => $this->model]);
+        return parent::view([ 'row' => $this->model, 'vehicles'=>$vehicles]);
     }
 
     public function postCreate(check $request) {
