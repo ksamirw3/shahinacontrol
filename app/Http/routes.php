@@ -19,6 +19,7 @@ Route::group(['prefix' => 'api', 'namespace' => 'Api'], function () {
         Route::controller('/category', 'Category\Category');
         Route::controller('/places', 'Places\Places');
         Route::controller('/contact', 'Contact\Contact');
+        Route::controller('/vehicle', 'Vehicle\Vehicle');
     });
 
     Route::group(['prefix' => 'driver', 'namespace' => 'Driver'], function () {
