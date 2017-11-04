@@ -56,7 +56,7 @@ class Orders extends \App\Http\Controllers\Api\Base {
         $data['from_address'] = $req['from_address'];
         $data['trip_type'] = $req['trip_type'];
         $data['image'] = $req['image'];
-        $data['client_id'] = $req['client_id'];
+        $data['client_id'] = (strpos($req['client_id'], "dr"))? substr($req['client_id'],2) : $req['client_id'];
 //      $data['custom_category'] = $req['custom_category'];
         $data['receiver_phone'] = $req['receiver_phone'];
         $data['receiver_name'] = $req['receiver_name'];
