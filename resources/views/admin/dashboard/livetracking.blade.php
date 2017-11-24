@@ -12,7 +12,7 @@
 </style>
 @stop
 @section('content')
-    <iframe src="http://control.shahina-global.com:30011/map"></iframe>
+    <iframe src="http://localhost:30010/map"></iframe>
 <!--<div id="map"></div>
 <script>
     function initMap() {
