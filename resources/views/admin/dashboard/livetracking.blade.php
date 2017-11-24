@@ -12,7 +12,7 @@
 </style>
 @stop
 @section('content')
-    <iframe src="http://localhost:30010/map"></iframe>
+    <iframe src="http://18.221.7.8:30010/map"></iframe>
 <!--<div id="map"></div>
 <script>
     function initMap() {
